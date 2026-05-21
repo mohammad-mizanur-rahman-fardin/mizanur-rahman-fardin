@@ -37,7 +37,7 @@ export default function Footer() {
         {/* Left Side: Brand & Copyright */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1.5">
           <span className="text-sm font-bold tracking-wider">
-            FARDIN<span className="text-primary font-light">.FAHIM</span>
+            MIZANUR RAHMAN<span className="text-primary font-light">FARDIN</span>
           </span>
           <p className="text-xs text-muted-text/80">
             &copy; {new Date().getFullYear()} Fardin Fahim. All rights reserved.

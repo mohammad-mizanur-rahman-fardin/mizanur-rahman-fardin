@@ -14,7 +14,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "docode-cp-platform",
-    title: "DoCode - Virtual CP Platform",
+    title: "DoCode - Online Competitive Programming Platform",
     description: "An online virtual competitive programming platform where users can solve problems, track ratings, and join contests.",
     longDescription: "Awarded 2nd Runners Up in the DBMS category at UIU CSE Project Show Spring 2025. Built as the flagship project for Team Monolith. It provides virtual contest arenas, submission queues, and personal progress analytics.",
     tags: ["Next.js", "Node.js", "PostgreSQL", "Tailwind CSS", "DBMS"],
@@ -30,7 +30,7 @@ export const projects: Project[] = [
   },
   {
     id: "laravel-volunteer-system",
-    title: "Laravel Volunteer Management System",
+    title: "An Integrated Humanitarian Ecosystem for Disaster Relief and Community Resilience",
     description: "A comprehensive platform matching volunteers with community events, tracking service hours, and generating reports.",
     longDescription: "A responsive web application designed to coordinate schedules, track community service hours, and generate automated certificates.",
     tags: ["PHP", "Laravel", "MySQL", "Tailwind CSS", "Bootstrap"],
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/mohammad-mizanur-rahman-fardin/role-based-profiles",
     liveUrl: "https://rbac-demo.vercel.app",
     featured: false,
-    role: "Backend Engineer",
+    role: "Full Stack Developer",
     highlights: [
       "Built custom RBAC middleware in Node.js enforcing strict security permissions",
       "Integrated Supabase storage api for profile photo hosting"
