@@ -37,10 +37,10 @@ export default function Footer() {
         {/* Left Side: Brand & Copyright */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1.5">
           <span className="text-sm font-bold tracking-wider">
-            MIZANUR RAHMAN<span className="text-primary font-light">FARDIN</span>
+            MIZANUR RAHMAN<span className="text-primary font-light"> FARDIN</span>
           </span>
           <p className="text-xs text-muted-text/80">
-            &copy; {new Date().getFullYear()} Fardin Fahim. All rights reserved.
+            &copy; {new Date().getFullYear()} Mohammad Mizanur Rahman Fardin. All rights reserved.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="flex items-center gap-1.5 text-xs text-muted-text/75 order-last md:order-none select-none">
           <span>Crafted with</span>
           <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 animate-pulse" />
-          <span>using Next.js &amp; Tailwind</span>
+          <span>using Next.js &amp; Tailwind CSS</span>
         </div>
 
         {/* Right Side: Quick Social Links */}

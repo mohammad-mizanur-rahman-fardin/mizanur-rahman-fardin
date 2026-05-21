@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function About() {
   const stats = [
-    { value: "650+", label: "CP Problems Solved" },
+    { value: "700+", label: "CP Problems Solved" },
     { value: "1176", label: "Max Codechef Rating" },
     { value: "941", label: "Max Codeforces Rating" },
     { value: "3.00+", label: "Academic CGPA" },
@@ -116,7 +116,7 @@ export default function About() {
               I am a <strong className="text-foreground">Computer Science &amp; Engineering student</strong> at United International University (UIU) admitted in January 2023, currently specializing in the domain of <strong className="text-foreground">AI &amp; Data Science</strong>, with an focus on <strong className="text-foreground">Natural Language Processing (NLP)</strong> and <strong className="text-foreground">Large Language Models (LLMs)</strong>.
             </p>
             <p>
-              Beyond AI modeling, I have a deep love for building robust web systems using frameworks like <strong className="text-foreground">Laravel</strong> and <strong className="text-foreground">Next.js</strong>. I am also an active competitive programmer and problem solver, having solved over <strong className="text-foreground">400 problems on Codeforces</strong> (max rating 941) and over <strong className="text-foreground">250 problems on Codechef</strong> (max rating 1176).
+              Beyond AI modeling, I have a deep love for building robust web systems using frameworks like <strong className="text-foreground">Laravel</strong> and <strong className="text-foreground">Next.js</strong>. I am also an active competitive programmer and problem solver, having solved over <strong className="text-foreground">450 problems on Codeforces</strong> (max rating 941) and over <strong className="text-foreground">250 problems on Codechef</strong> (max rating 1176).
             </p>
             <p>
               When I step away from the compiler, I love doing heavy workouts in the gym, exploring local delicacies, traveling to scenic places, and learning about emerging technologies. Dhaka is my home, born and raised in the Mugda area.

@@ -54,7 +54,7 @@ function MagneticButton({
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("");
-  const roles = ["AI & Data Science Enthusiast", "Full Stack Developer", "Competitive Programmer", "NLP & LLM Specialist"];
+  const roles = ["AI & Data Science Enthusiast", "Full Stack Developer", "Competitive Programmer", "NLP & LLM Learner", "Laravel Developer"];
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
@@ -133,7 +133,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel text-xs tracking-wider font-semibold uppercase text-primary border-primary/20 mb-8"
         >
           <Code className="w-3.5 h-3.5" />
-          <span>Available for Freelance & Full-time Roles</span>
+          <span>Available for Internships, Remote & Flexible Opportunities</span>
         </motion.div>
 
         {/* Name Title */}
@@ -176,7 +176,7 @@ export default function Hero() {
           className="text-base sm:text-lg md:text-xl text-muted-text max-w-2xl leading-relaxed mb-12"
         >
           BSc in Computer Science &amp; Engineering @ UIU. Building full-stack web systems with modern tech. 
-          Passionate about AI, NLP, and competitive programming. 400+ problems solved on Codeforces.
+          Passionate about AI, NLP and competitive programming. 400+ problems solved on Codeforces.
         </motion.p>
 
         {/* CTA Actions */}
