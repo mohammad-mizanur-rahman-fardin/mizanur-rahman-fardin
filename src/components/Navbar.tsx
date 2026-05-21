@@ -85,7 +85,7 @@ export default function Navbar() {
             <Terminal className="w-5 h-5" />
           </div>
           <span className="tracking-wider">
-            MIZANUR RAHMAN<span className="text-primary font-light">FARDIN</span>
+            MIZANUR RAHMAN<span className="text-primary font-light"> FARDIN</span>
           </span>
         </button>
 
