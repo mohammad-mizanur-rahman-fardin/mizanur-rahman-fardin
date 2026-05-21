@@ -30,7 +30,7 @@ export const projects: Project[] = [
   },
   {
     id: "laravel-volunteer-system",
-    title: "An Integrated Humanitarian Ecosystem for Disaster Relief and Community Resilience",
+    title: "ReliefConnect - An Integrated Humanitarian Ecosystem for Disaster Relief and Community Resilience",
     description: "A comprehensive platform matching volunteers with community events, tracking service hours, and generating reports.",
     longDescription: "A responsive web application designed to coordinate schedules, track community service hours, and generate automated certificates.",
     tags: ["PHP", "Laravel", "MySQL", "Tailwind CSS", "Bootstrap"],
