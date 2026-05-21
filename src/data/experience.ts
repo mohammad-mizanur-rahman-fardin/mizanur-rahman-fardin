@@ -5,7 +5,7 @@ export interface TimelineItem {
   location: string;
   period: string;
   description: string[];
-  type: "achievement" | "education";
+  type: "achievement" | "education" | "work";
   skills?: string[];
 }
 
