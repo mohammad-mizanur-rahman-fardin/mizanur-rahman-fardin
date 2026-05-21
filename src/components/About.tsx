@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, Code2, Award, Heart } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
   const stats = [
@@ -10,6 +11,12 @@ export default function About() {
     { value: "1176", label: "Max Codechef Rating" },
     { value: "941", label: "Max Codeforces Rating" },
     { value: "3.00+", label: "Academic CGPA" },
+  ];
+
+  const profileLinks = [
+    { name: "Codeforces", url: "https://codeforces.com/profile/Mizanur_Rahman_Fardin", handle: "Mizanur_Rahman_Fardin" },
+    { name: "CodeChef", url: "https://www.codechef.com/users/mizanur_fardin", handle: "mizanur_fardin" },
+    { name: "GitHub", url: "https://github.com/mohammad-mizanur-rahman-fardin", handle: "mohammad-mizanur-rahman-fardin" },
   ];
 
   return (
@@ -28,8 +35,21 @@ export default function About() {
           <h3 className="text-3xl font-extrabold tracking-tight">About Me</h3>
         </div>
 
-        {/* Left Column - Mock Code Terminal */}
-        <div className="lg:col-span-5 w-full flex flex-col">
+        {/* Left Column - Mock Code Terminal + Profile Photo */}
+        <div className="lg:col-span-5 w-full flex flex-col gap-6">
+          {/* Profile Photo */}
+          <div className="relative w-full aspect-square rounded-2xl overflow-hidden glass-panel border border-border-custom shadow-2xl">
+            <Image
+              src="/profile-photo.jpg"
+              alt="Mohammad Mizanur Rahman Fardin"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
+          </div>
+
+          {/* Code Terminal */}
           <div className="glass-panel rounded-2xl overflow-hidden shadow-2xl border border-border-custom bg-card/40">
             {/* Terminal Header */}
             <div className="h-10 px-4 flex items-center justify-between border-b border-border-custom bg-background/40">
@@ -55,13 +75,16 @@ export default function About() {
                 <span>location:</span> <span className="text-secondary">&quot;Mugda, Dhaka, Bangladesh&quot;</span>,
               </div>
               <div className="pl-4">
-                <span>focus:</span> <span className="text-secondary">&quot;AI &amp; Data Science (NLP &amp; LLM)&quot;</span>,
+                <span>education:</span> <span className="text-secondary">&quot;B.Sc. CSE @ UIU (Jan 2023)&quot;</span>,
               </div>
               <div className="pl-4">
-                <span>education:</span> <span className="text-secondary">&quot;B.Sc. in CSE at UIU&quot;</span>,
+                <span>domain:</span> <span className="text-secondary">&quot;AI &amp; Data Science (NLP &amp; LLM)&quot;</span>,
               </div>
               <div className="pl-4">
-                <span>hobbies:</span> <span className="text-secondary">[&quot;Gym Workout&quot;, &quot;Food Lover&quot;, &quot;Traveling&quot;]</span>,
+                <span>focus:</span> <span className="text-secondary">[&quot;Web Dev&quot;, &quot;Competitive Programming&quot;, &quot;LLM/NLP&quot;]</span>,
+              </div>
+              <div className="pl-4">
+                <span>hobbies:</span> <span className="text-secondary">[&quot;Gym&quot;, &quot;Food&quot;, &quot;Travel&quot;, &quot;Building with Tech&quot;]</span>,
               </div>
               <div className="pl-4">
                 <span>handles:</span> &#123;
@@ -69,7 +92,10 @@ export default function About() {
                   <span>codeforces:</span> <span className="text-secondary">&quot;Mizanur_Rahman_Fardin&quot;</span>,
                 </div>
                 <div className="pl-4">
-                  <span>codechef:</span> <span className="text-secondary">&quot;mizanur_fardin&quot;</span>
+                  <span>codechef:</span> <span className="text-secondary">&quot;mizanur_fardin&quot;</span>,
+                </div>
+                <div className="pl-4">
+                  <span>github:</span> <span className="text-secondary">&quot;mohammad-mizanur-rahman-fardin&quot;</span>
                 </div>
                 <span>&#125;</span>
               </div>

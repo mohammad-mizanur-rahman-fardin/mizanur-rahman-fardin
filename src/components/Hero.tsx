@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Mail, Code, Terminal, ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 // Custom Magnetic Button Component
 function MagneticButton({
@@ -53,7 +54,7 @@ function MagneticButton({
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("");
-  const roles = ["Full Stack Developer", "Laravel Specialist", "React & Next.js Creator", "Problem Solver"];
+  const roles = ["AI & Data Science Enthusiast", "Full Stack Developer", "Competitive Programmer", "NLP & LLM Specialist"];
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
@@ -142,8 +143,16 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight select-none"
         >
-          Hi, I&apos;m <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-size-200 animate-gradient text-transparent bg-clip-text">Fardin Fahim</span>
+          Hi, I&apos;m <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-size-200 animate-gradient text-transparent bg-clip-text">Fardin</span>
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="text-sm sm:text-base text-muted-text/75 tracking-wide font-mono mb-2"
+        >
+          Mohammad Mizanur Rahman Fardin
+        </motion.p>
 
         {/* Dynamic Typing Subtitle */}
         <motion.div
@@ -166,8 +175,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-base sm:text-lg md:text-xl text-muted-text max-w-2xl leading-relaxed mb-12"
         >
-          A dedicated developer building performant, modern, and pixel-perfect web systems. 
-          Specialized in Next.js, Laravel, and responsive UI design.
+          BSc in Computer Science &amp; Engineering @ UIU. Building full-stack web systems with modern tech. 
+          Passionate about AI, NLP, and competitive programming. 400+ problems solved on Codeforces.
         </motion.p>
 
         {/* CTA Actions */}
@@ -194,6 +203,27 @@ export default function Hero() {
             <Mail className="w-4 h-4" />
             <span>Contact Me</span>
           </MagneticButton>
+        </motion.div>
+
+        {/* Profile Photo Reveal */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-16 md:mt-20 relative w-48 h-56 md:w-56 md:h-72 rounded-2xl overflow-hidden glass-panel border-2 border-primary/20 shadow-2xl"
+        >
+          <Image
+            src="/profile-photo.jpg"
+            alt="Mohammad Mizanur Rahman Fardin"
+            fill
+            className="object-cover"
+            priority
+          />
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent"
+            animate={{ opacity: [0.3, 0.6, 0.3] }}
+            transition={{ duration: 4, repeat: Infinity }}
+          />
         </motion.div>
       </motion.div>
 

@@ -87,22 +87,22 @@ export default function Contact() {
   const socialLinks = [
     {
       name: "Email",
-      value: "fardin.fahim.dev@gmail.com",
-      href: "mailto:fardin.fahim.dev@gmail.com",
+      value: "mizanur.rahman.fardin@gmail.com",
+      href: "mailto:mizanur.rahman.fardin@gmail.com",
       icon: <Mail className="w-5 h-5" />,
       colorClass: "hover:text-primary hover:border-primary/30",
     },
     {
       name: "GitHub",
-      value: "github.com/fardinfahim",
-      href: "https://github.com/fardinfahim",
+      value: "github.com/mohammad-mizanur-rahman-fardin",
+      href: "https://github.com/mohammad-mizanur-rahman-fardin",
       icon: <GithubIcon className="w-5 h-5" />,
       colorClass: "hover:text-foreground hover:border-foreground/30",
     },
     {
       name: "LinkedIn",
-      value: "linkedin.com/in/fardinfahim",
-      href: "https://linkedin.com/in/fardinfahim",
+      value: "linkedin.com/in/mizanur-rahman-fardin-44598b320",
+      href: "https://www.linkedin.com/in/mizanur-rahman-fardin-44598b320/",
       icon: <LinkedinIcon className="w-5 h-5" />,
       colorClass: "hover:text-secondary hover:border-secondary/30",
     },
